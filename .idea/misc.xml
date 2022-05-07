@@ -8,11 +8,13 @@
         <entry key="app/src/main/res/drawable/ic_video.xml" value="0.114" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19074074074074074" />
         <entry key="app/src/main/res/layout/drawer_header.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/faculty_item_layout.xml" value="0.17037037037037037" />
         <entry key="app/src/main/res/layout/fragment_about.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/fragment_faculty.xml" value="0.17864583333333334" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.16666666666666666" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.18518518518518517" />
         <entry key="app/src/main/res/layout/fragment_notice.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/no_faculty_data_found.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/notice_item_layout.xml" value="0.67" />
         <entry key="app/src/main/res/menu/drawer_menu.xml" value="0.19375" />
         <entry key="app/src/main/res/menu/navigation_menu.xml" value="0.14814814814814814" />
