@@ -1,6 +1,7 @@
 package com.example.campus.ui.gallery;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.campus.FullImageActivity;
 import com.example.campus.R;
 import com.example.campus.ui.faculty.FacultyData;
 import com.squareup.picasso.Picasso;
@@ -42,6 +44,14 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.GalleryV
         } catch (Exception e) {
             e.printStackTrace();
         }
+        holder.iv_gallery_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(context, FullImageActivity.class);
+                intent.putExtra("image",cur_image);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

@@ -8,10 +8,12 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.campus.pdf.PdfActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -62,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
             case R.id.navigation_ebook:
             {
-                Toast.makeText(this, "Ebook clicked", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, PdfActivity.class));
                 break;
             }
             case R.id.navigation_theme:
