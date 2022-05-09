@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_margin="6dp"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="#FDF7E5"
     tools:context=".pdf.PdfActivity">
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Available PDFs"
-        android:textStyle="bold"
         android:fontFamily="@font/lato_bold"
         android:gravity="center_horizontal"
         android:padding="6dp"
-        android:textSize="30dp"/>
+        android:text="Available PDFs"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_pdf"
+        android:layout_margin="3dp"
+        android:layout_below="@id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:padding="3dp"/>
 
-</LinearLayout>
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_below="@id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/shimmer_layout_item"/>
+            <include layout="@layout/shimmer_layout_item"/>
+            <include layout="@layout/shimmer_layout_item"/>
+            <include layout="@layout/shimmer_layout_item"/>
+            <include layout="@layout/shimmer_layout_item"/>
+            <include layout="@layout/shimmer_layout_item"/>
+            <include layout="@layout/shimmer_layout_item"/>
+            <include layout="@layout/shimmer_layout_item"/>
+            <include layout="@layout/shimmer_layout_item"/>
+            <include layout="@layout/shimmer_layout_item"/>
+            <include layout="@layout/shimmer_layout_item"/>
+            <include layout="@layout/shimmer_layout_item"/>
+            <include layout="@layout/shimmer_layout_item"/>
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</RelativeLayout>
